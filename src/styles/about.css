@@ -1,0 +1,248 @@
+/* ==========================================
+   About Section
+========================================== */
+
+.about{
+    padding:60px 8%;
+    background:#F8F5F0;
+}
+
+/* ==========================================
+   Layout
+========================================== */
+
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* ==========================================
+   Image
+========================================== */
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.about-image img:hover{
+    transform:scale(1.02);
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.about-content{
+    flex:1;
+}
+
+.about-tag{
+
+    display:inline-block;
+
+    background:#C97B63;
+
+    color:white;
+
+    padding:6px 16px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.about-content h2{
+
+    font-size:34px;
+
+    color:#8B5E3C;
+
+    line-height:1.3;
+
+    margin-bottom:18px;
+
+}
+
+.about-content p{
+
+    font-size:16px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+   Feature Cards
+========================================== */
+
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.feature{
+
+    background:#ffffff;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.05);
+
+    color:#333;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-3px);
+
+    background:#FFF7F1;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.about-btn{
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#8B5E3C;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.about-btn:hover{
+
+    background:#C97B63;
+
+    transform:translateY(-3px);
+
+}
+
+.about-link{
+    text-decoration:none;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+.about-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.about-image img{
+
+height:300px;
+
+}
+
+.about-content h2{
+
+font-size:30px;
+
+}
+
+.about-features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about{
+
+padding:50px 5%;
+
+}
+
+.about-image img{
+
+height:220px;
+
+}
+
+.about-content h2{
+
+font-size:26px;
+
+}
+
+.about-content p{
+
+font-size:15px;
+
+}
+
+.about-features{
+
+grid-template-columns:1fr;
+
+}
+
+.about-btn{
+
+width:100%;
+
+}
+
+}

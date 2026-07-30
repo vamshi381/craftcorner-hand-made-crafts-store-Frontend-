@@ -1,0 +1,264 @@
+/* ==========================================
+   LOGIN PAGE STYLING
+   CraftCorner - Handmade Crafts Store
+========================================== */
+
+/* Main Container */
+.login-container{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    background: #f8f5f0;
+    overflow: hidden;
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.login-left{
+    width: 50%;
+    background: linear-gradient(135deg,#c97b63,#8b5e3c);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-left h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login-left h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.login-left p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.login-left img{
+    width: 80%;
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.login-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 40px;
+}
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.login-card{
+    width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.login-card h2{
+    text-align: center;
+    font-size: 34px;
+    color: #8b5e3c;
+    margin-bottom: 10px;
+}
+
+.login-card p{
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-group input:focus{
+    border-color: #c97b63;
+    box-shadow: 0 0 8px rgba(201,123,99,.4);
+}
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #8b5e3c;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover{
+    background: #c97b63;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   FORGOT PASSWORD
+========================================== */
+
+.forgot-password-link{
+    border: none;
+    background: transparent;
+    color: #8b5e3c;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.forgot-password-link:hover{
+    color: #c97b63;
+}
+
+.forgot-password-form{
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #f0e0d1;
+    border-radius: 14px;
+    background: #fcf8f4;
+}
+
+.forgot-password-actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.secondary-btn{
+    background: #6c757d;
+}
+
+.secondary-btn:hover{
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   REGISTER LINK
+========================================== */
+
+.bottom-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bottom-text a{
+    color: #8b5e3c;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.bottom-text a:hover{
+    color: #c97b63;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px){
+
+    .login-container{
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right{
+        width: 100%;
+    }
+
+    .login-left{
+        padding: 30px 20px;
+    }
+
+    .login-left img{
+        width: 70%;
+    }
+
+    .login-card{
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 576px){
+
+    .login-left h1{
+        font-size: 36px;
+    }
+
+    .login-left h2{
+        font-size: 26px;
+    }
+
+    .login-left p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .login-card{
+        padding: 25px;
+    }
+
+    .login-card h2{
+        font-size: 28px;
+    }
+
+    .forgot-password-actions{
+        flex-direction: column;
+    }
+}

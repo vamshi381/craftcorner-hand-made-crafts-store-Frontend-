@@ -1,0 +1,149 @@
+/* ==========================================
+   Order Success
+========================================== */
+
+.order-success{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f8f9fd;
+
+    padding:30px;
+
+}
+
+.success-card{
+
+    width:600px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.success-icon{
+
+    font-size:80px;
+
+    margin-bottom:25px;
+
+}
+
+.success-card h2{
+
+    color:#28a745;
+
+    margin-bottom:20px;
+
+    font-size:36px;
+
+}
+
+.success-card p{
+
+    color:#666;
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+.success-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    margin-top:40px;
+
+}
+
+.success-buttons button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.orders-btn{
+
+    background:#8b5e3c;
+
+    color:white;
+
+}
+
+.orders-btn:hover{
+
+    background:#a86f45;
+
+}
+
+.shop-btn{
+
+    background:white;
+
+    border:2px solid #8b5e3c;
+
+    color:#8b5e3c;
+
+}
+
+.shop-btn:hover{
+
+    background:#8b5e3c;
+
+    color:white;
+
+}
+
+@media(max-width:768px){
+
+.success-card{
+
+width:100%;
+
+padding:35px;
+
+}
+
+.success-buttons{
+
+flex-direction:column;
+
+}
+
+.success-buttons button{
+
+width:100%;
+
+}
+
+}

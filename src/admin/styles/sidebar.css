@@ -1,0 +1,131 @@
+.admin-sidebar{
+
+    width:260px;
+
+    min-height:100vh;
+
+    background:#1f2937;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+}
+
+.sidebar-logo{
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.sidebar-logo h2{
+
+    color:#f59e0b;
+
+    margin-bottom:5px;
+
+}
+
+.sidebar-logo p{
+
+    color:#ccc;
+
+    font-size:14px;
+
+}
+
+.admin-sidebar ul{
+
+    list-style:none;
+
+    padding:20px 0;
+
+    margin:0;
+
+}
+
+.admin-sidebar li{
+
+    margin:5px 0;
+
+}
+
+.admin-sidebar a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 25px;
+
+    transition:.3s;
+
+}
+
+.admin-sidebar a:hover{
+
+    background:#374151;
+
+    color:white;
+
+}
+
+.admin-sidebar a.active{
+
+    background:#f59e0b;
+
+    color:white;
+
+}
+
+.logout-btn{
+
+    margin:20px;
+
+    padding:12px;
+
+    border:none;
+
+    background:#dc2626;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logout-btn:hover{
+
+    background:#b91c1c;
+
+}

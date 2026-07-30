@@ -1,0 +1,412 @@
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-page{
+    background:#f8f9fd;
+    color:#333;
+}
+
+/* ==========================================
+   Hero Section
+========================================== */
+
+.about-hero{
+
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://i.pinimg.com/control1/736x/e3/32/8f/e3328f7b225928fbe6a1d603e50241a3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:420px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.about-hero h1{
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.about-hero p{
+
+    font-size:22px;
+
+    max-width:750px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   Container
+========================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   Story Section
+========================================== */
+
+.about-story{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    padding:90px 0;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.story-content h2{
+
+    font-size:42px;
+
+    color:#8b5e3c;
+
+    margin-bottom:25px;
+
+}
+
+.story-content p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   Why Choose Us
+========================================== */
+
+.why-us{
+
+    background:white;
+
+    padding:80px 0;
+
+}
+
+.why-us h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#8b5e3c;
+
+    margin-bottom:50px;
+
+}
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.features div{
+
+    background:#fff7ef;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#444;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.features div:hover{
+
+    transform:translateY(-8px);
+
+    background:#8b5e3c;
+
+    color:white;
+
+}
+
+/* ==========================================
+   Statistics
+========================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    padding:90px 0;
+
+}
+
+.stat{
+
+    background:white;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.stat h2{
+
+    font-size:46px;
+
+    color:#8b5e3c;
+
+    margin-bottom:10px;
+
+}
+
+.stat p{
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.about-cta{
+
+    background:#8b5e3c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.about-cta h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about-cta p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.about-cta button{
+
+    padding:15px 40px;
+
+    background:white;
+
+    color:#8b5e3c;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.about-cta button:hover{
+
+    background:#f4e6d8;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+.about-story{
+
+grid-template-columns:1fr;
+
+}
+
+.features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-hero h1{
+
+font-size:46px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero{
+
+height:340px;
+
+}
+
+.about-hero h1{
+
+font-size:38px;
+
+}
+
+.about-hero p{
+
+font-size:18px;
+
+}
+
+.story-content h2{
+
+font-size:34px;
+
+}
+
+.why-us h2{
+
+font-size:34px;
+
+}
+
+.about-cta h2{
+
+font-size:34px;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about-story{
+
+padding:60px 0;
+
+gap:30px;
+
+}
+
+.story-content p{
+
+font-size:16px;
+
+}
+
+.about-cta{
+
+padding:60px 20px;
+
+}
+
+.about-cta button{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+}

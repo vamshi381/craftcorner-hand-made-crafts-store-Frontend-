@@ -1,0 +1,241 @@
+/* ==========================================
+   Latest Products Section
+========================================== */
+
+.latest {
+  padding: 80px 8%;
+  background: #fffdf9;
+}
+
+.latest .container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.latest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.latest .section-title {
+  font-size: 40px;
+  color: #8b5e3c;
+  margin-bottom: 10px;
+}
+
+.latest .section-subtitle {
+  color: #666;
+  font-size: 17px;
+}
+
+/* ==========================================
+   View All Button
+========================================== */
+
+.view-all-link {
+  text-decoration: none;
+}
+
+.view-all-btn {
+  background: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background: #c97b63;
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   Product Slider
+========================================== */
+
+.latest .product-grid {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+/* Hide Scrollbar */
+
+.latest .product-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.latest .product-grid::-webkit-scrollbar-thumb {
+  background: #c97b63;
+  border-radius: 20px;
+}
+
+.latest .product-grid::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* ==========================================
+   Product Card
+========================================== */
+
+.latest .product-card {
+  min-width: 270px;
+  max-width: 270px;
+  flex-shrink: 0;
+
+  background: white;
+  border-radius: 18px;
+  padding: 15px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.latest .product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(139, 94, 60, 0.15);
+}
+
+/* ==========================================
+   Product Image
+========================================== */
+
+.latest .product-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ==========================================
+   Product Info
+========================================== */
+
+.latest .product-info {
+  padding-top: 15px;
+}
+
+.latest .category {
+  display: inline-block;
+  background: #f3e8dd;
+  color: #8b5e3c;
+  padding: 5px 12px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.latest .product-info h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  min-height: 45px;
+}
+
+.latest .rating {
+  color: #ffb400;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.latest .product-info h3 {
+  color: #8b5e3c;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.latest .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.latest .cart-btn,
+.latest .details-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.latest .cart-btn {
+  background: #8b5e3c;
+  color: white;
+  border: none;
+}
+
+.latest .cart-btn:hover {
+  background: #c97b63;
+}
+
+.latest .details-btn {
+  background: white;
+  color: #8b5e3c;
+  border: 2px solid #8b5e3c;
+}
+
+.latest .details-btn:hover {
+  background: #8b5e3c;
+  color: white;
+}
+
+.latest .details-link {
+  text-decoration: none;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 768px) {
+
+  .latest {
+    padding: 60px 5%;
+  }
+
+  .latest-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .latest .section-title {
+    font-size: 32px;
+  }
+
+  .latest .section-subtitle {
+    font-size: 15px;
+  }
+
+  .latest .product-card {
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .latest .product-card img {
+    height: 160px;
+  }
+}

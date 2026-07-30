@@ -1,0 +1,330 @@
+/* ==========================================
+   PRODUCT DETAILS
+========================================== */
+
+.product-details {
+    padding: 80px 8%;
+    background: #f8f9fd;
+    min-height: 100vh;
+}
+
+.details-container {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.details-image {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.details-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: .4s;
+}
+
+.details-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge {
+    display: inline-block;
+    width: fit-content;
+
+    background: #f5ebdd;
+    color: #8b5e3c;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.details-info h1 {
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffc107;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.rating span {
+    color: #666;
+    font-size: 16px;
+}
+
+.details-info h2 {
+    color: #8b5e3c;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.details-info p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   EXTRA INFO
+========================================== */
+
+.extra-info {
+    margin: 30px 0;
+}
+
+.extra-info p {
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   QUANTITY
+========================================== */
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 30px 0;
+}
+
+.quantity button {
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.quantity span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-btn,
+.wishlist-btn {
+
+    flex: 1;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.cart-btn {
+
+    background: #8b5e3c;
+
+    color: white;
+
+}
+
+.cart-btn:hover {
+
+    background: #a76d44;
+
+}
+
+.wishlist-btn {
+
+    background: white;
+
+    color: #8b5e3c;
+
+    border: 2px solid #8b5e3c;
+
+}
+
+.wishlist-btn:hover {
+
+    background: #8b5e3c;
+
+    color: white;
+
+}
+
+/* ==========================================
+   RELATED PRODUCTS
+========================================== */
+
+.related-products{
+
+    margin-top:80px;
+
+}
+
+.related-products h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:34px;
+
+    color:#8b5e3c;
+
+}
+
+.related-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+@media(max-width:992px){
+
+.related-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.related-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.details-container{
+
+grid-template-columns:1fr;
+
+}
+
+.details-image img{
+
+height:450px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.product-details{
+
+padding:40px 5%;
+
+}
+
+.details-container{
+
+padding:20px;
+
+gap:30px;
+
+}
+
+.details-info h1{
+
+font-size:28px;
+
+}
+
+.details-info h2{
+
+font-size:30px;
+
+}
+
+.details-image img{
+
+height:320px;
+
+}
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+}

@@ -1,0 +1,239 @@
+/* ==========================================
+   REGISTER PAGE STYLING
+   CraftCorner - Handmade Crafts Store
+========================================== */
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.register-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #f8f5f0;
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.register-left{
+    width: 50%;
+    background: linear-gradient(135deg,#c97b63,#8b5e3c);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.register-left h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.register-left h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.register-left p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.register-left img{
+    width: 80%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.register-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+/* ==========================================
+   REGISTER CARD
+========================================== */
+
+.register-card{
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.register-card h2{
+    text-align: center;
+    color: #8b5e3c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.register-card p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.form-group input:focus{
+    border-color: #c97b63;
+    box-shadow: 0 0 8px rgba(201,123,99,.4);
+}
+
+/* ==========================================
+   REGISTER BUTTON
+========================================== */
+
+.register-btn{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #8b5e3c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register-btn:hover{
+    background: #c97b63;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   LOGIN LINK
+========================================== */
+
+.bottom-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bottom-text a{
+    color: #8b5e3c;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.bottom-text a:hover{
+    color: #c97b63;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px){
+
+    .register-container{
+        flex-direction: column;
+    }
+
+    .register-left,
+    .register-right{
+        width: 100%;
+    }
+
+    .register-left{
+        padding: 30px 20px;
+    }
+
+    .register-left img{
+        width: 70%;
+    }
+
+    .register-card{
+        max-width: 90%;
+        margin: 40px auto;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    .register-left h1{
+        font-size: 36px;
+    }
+
+    .register-left h2{
+        font-size: 26px;
+    }
+
+    .register-left p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .register-card{
+        padding: 25px;
+    }
+
+    .register-card h2{
+        font-size: 28px;
+    }
+
+    .register-btn{
+        font-size: 16px;
+    }
+
+}
