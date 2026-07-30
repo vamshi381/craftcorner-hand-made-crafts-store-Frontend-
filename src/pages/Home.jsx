@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import FeaturedProducts from "../components/FeaturedProducts";
 import LatestProducts from '../components/LatestProducts';
-import OfferBanner from '../components/offerBanner';
+import OfferBanner from '../components/OfferBanner';
 import About from '../components/About';
 import CustomerReviews from '../components/CustomerReviews';
 
