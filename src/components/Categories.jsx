@@ -13,16 +13,11 @@ const Categories = () => {
         axios
             .get("https://craftcorner-hand-made-crafts-store.onrender.com/categories")
             .then((res) => {
-
                 setCategories(res.data);
-
             })
             .catch((error) => {
-
                 console.log(error);
-
             });
-
     }, []);
 
     return (

@@ -104,7 +104,7 @@ const Profile = () => {
     };
 
     try {
-      await axios.put(`http://localhost:5000/users/${user.id}`, updatedUser);
+      await axios.put(`https://craftcorner-hand-made-crafts-store.onrender.com/users/${user.id}`, updatedUser);
 
       localStorage.setItem("currentUser", JSON.stringify(updatedUser));
       localStorage.setItem("user", JSON.stringify(updatedUser));

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
 
 import {
   Navbar,
@@ -30,6 +31,7 @@ import {
 import { getCart } from "../services/cartService";
 import { getWishlist } from "../services/wishlistService";
 
+
 import "../styles/navbar.css";
 
 const NavbarComponent = () => {
@@ -44,6 +46,7 @@ const NavbarComponent = () => {
     (state) => state.auth
   );
 
+  const [search, setSearch] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const cartCount = useSelector(
@@ -69,6 +72,32 @@ const NavbarComponent = () => {
       console.log(error);
     }
   };
+
+  const handleSearch = async (e) => {
+  e.preventDefault();
+
+  if (!search.trim()) return;
+
+  try {
+    const res = await axios.get(
+      "https://craftcorner-hand-made-crafts-store.onrender.com/products"
+    );
+
+    const product = res.data.find((item) =>
+      item.name.toLowerCase().includes(search.toLowerCase())
+    );
+
+    if (product) {
+      navigate(`/product/${product.id}`);
+      setSearch("");
+    } else {
+      alert("Product not found");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Unable to search products");
+  }
+};
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -100,6 +129,9 @@ const NavbarComponent = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+
+  
 
   return (
     <Navbar
@@ -174,13 +206,15 @@ const NavbarComponent = () => {
               </Nav.Link>
             </Nav>
 
-            <Form className="search-form mobile-search-form">
+            <Form className="search-form mobile-search-form" onSubmit={handleSearch}>
               <Form.Control
                 type="search"
                 placeholder="Search Products..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
 
-              <Button variant="warning">
+              <Button type="submit" variant="warning">
                 <FaSearch />
               </Button>
             </Form>
@@ -277,14 +311,16 @@ const NavbarComponent = () => {
 
           {/* Search */}
 
-          <Form className="search-form">
+          <Form className="search-form" onSubmit={handleSearch}>
 
             <Form.Control
               type="search"
               placeholder="Search Products..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
 
-            <Button variant="warning">
+            <Button type="submit" variant="warning">
               <FaSearch />
             </Button>
 
